@@ -61,7 +61,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id fcitx
 
 # background
-exec --no-startup-id feh --randomize --bg-scal /home/loren/Pictures/*
+exec_always --no-startup-id feh --randomize --bg-scal /home/loren/Pictures/login.jpg
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -83,6 +83,7 @@ bindsym $mod+c exec code
 bindsym $mod+g exec google-chrome-stable
 bindsym $mod+p exec ~/.config/i3/bin/logout
 bindsym $mod+Shift+f exec /home/loren/.config/i3/bin/rofifinder
+bindsys $mod+ctrl+l exec betterlockscreen -l dim
 # kill focused window
 bindsym $mod+Shift+q kill
 

@@ -6,7 +6,8 @@ case $option in
         sudo  /usr/bin/systemctl syspend
         ;;
     'lock screen')
-        i3lock -i /home/loren/Pictures/lock.png
+       #i3lock -i /home/loren/Pictures/login.jpg
+       bash ~/SOFTWARE/i3lock-color/examples/lock.sh
         ;;
     logout)
         i3-nagbar -t warning -m 'Are you sure you  want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'
